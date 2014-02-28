@@ -1,0 +1,24 @@
+.Pager {
+  text-align: center;
+  color: $color-text-meta;
+  clear: both;
+  @include rhythm(1, 0, 0, 1, 16px);
+}
+
+.Pager-item-of {
+  font-style: italic;
+}
+
+.Pager-item--previous,
+.Pager-item--next,
+.Pager-item--empty {
+	display: inline-block;
+	@include adjust-font-size-to(14px);
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.Pager-item--empty {
+	color: lighten($color-border, 5%);
+}
+

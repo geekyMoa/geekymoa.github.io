@@ -1,0 +1,23 @@
+.Page-title {
+  @include adjust-font-size-to(12px);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  @include span-columns(18 omega, 24);
+  border-bottom: 1px solid $color-border;
+  @include rhythm(0, 0, 0, 1, 12px);
+}
+
+.Page-content {
+  @include at-breakpoint($bp-smallscreen) {
+    @include span-columns(18 omega, 24);
+  }
+}
+
+.Page-content-h2 {
+  @include adjust-font-size-to(18px);
+  @include rhythm(1, 0, 0, 0, 18px);
+
+  &:first-child {
+    @include rhythm(1, 0, 0, 0, 18px);
+  }
+}

@@ -1,0 +1,41 @@
+.js {
+
+  // keywords
+  .kd {
+    color: #d800ab;
+  }
+
+  // function name
+  .nx {
+    color: #00a3a2;
+  }
+
+  // special signs ((){}; etc)
+  .p {
+    color: #7400e2;
+  }
+
+  // string
+  .s1 {
+    color: #000;
+  }
+
+  // comment
+  .c1 {
+    color: #888;
+  }
+
+  .lineno {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    @include at-breakpoint($bp-normalscreen) {
+      display: inline-block;
+      min-width: 1em;
+    }
+  }
+}

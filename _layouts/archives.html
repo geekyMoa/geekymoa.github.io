@@ -1,0 +1,21 @@
+{% include header.ext %}
+
+<section class="Page Page--archive Layout-container">
+
+<h1 class="Page-title">Archives</h1>
+
+<div class="Page-content">
+  {% for month in page.months %}
+  <h2 class="Page-content-h2">{{ month | date:"%B" }} {{ month | date:"%Y" }}</h2>
+  <ul class="Archives">
+    {% for post in page.posts_by_month[month] %}
+    <li class="Archives-post-title"><a href="{{ post.url }}">{{ post.title | truncate:65 }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>
+</section>
+
+{% include sidebar.ext %}
+
+{% include footer.ext %}

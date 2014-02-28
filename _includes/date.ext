@@ -1,0 +1,14 @@
+<div class="Date Date--post {{ include.class }}">
+  <span class="Date-inner">
+    {% assign modifieddate = page.date | date_to_long_string | split:&nbsp; %}
+    {% for item in modifieddate %}
+      {% if forloop.first or forloop.last %}
+        {{ item }}
+      {% else %}
+        <span class="Date-month">
+        {{ item }}
+        </span>
+      {% endif %}
+    {% endfor %}
+  </span>
+</div>

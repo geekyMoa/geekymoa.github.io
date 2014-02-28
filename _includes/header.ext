@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>geekyMoa</title>
+  <script type="text/javascript" src="//use.typekit.net/fnw1tsp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" media="screen" href="/assets/css/geekymoa.css"/>
+</head>
+<body class="Layout no-js">
+<header class="Layout-header" role="banner">
+  <div class="Layout-container">
+
+    {% if include.param == 'h1' %}
+      <h1 class="Logo">
+        <a href="/" class="Logo-link">geekyMoa</a>
+      </h1>
+    {% endif %}
+
+    {% if include.param != 'h1' %}
+    <div class="Logo">
+      <a href="/" class="Logo-link">geekyMoa</a>
+    </div>
+    {% endif %}
+
+    <span class="Description">Front end developer <span class="Description-work">@ <a href="http://wunderkraut.se">Wunderkraut Sweden</a></span></span>
+
+  </div>
+</header>

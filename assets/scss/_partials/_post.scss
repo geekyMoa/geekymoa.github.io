@@ -1,0 +1,87 @@
+// Posts
+
+.Post {
+  @include clearfix;
+  @include rhythm(0, 1.5, 1.5, 0, 16px);
+  border-bottom: 1px dotted $color-border;
+}
+
+.Post.Post--single {
+  @include rhythm(0, 1, 0, 0, 16px);
+  border-bottom: none;
+}
+
+.Post-title {
+  @include adjust-font-size-to(20px);
+  @include rhythm(0, 1, 1, 0, 20px);
+  @include adjust-leading-to(0.8);
+
+  @include at-breakpoint($bp-pad) {
+    @include adjust-font-size-to(26px);
+    @include rhythm(0, 1, 1, 0, 26px);
+    @include adjust-leading-to(0.8);
+  }
+
+  @include at-breakpoint($bp-smallscreen) {
+    @include adjust-font-size-to(36px);
+    @include rhythm(0, 1, 1, 0, 36px);
+    @include adjust-leading-to(0.8);
+  }
+
+  @include at-breakpoint($bp-largescreen) {
+    @include adjust-font-size-to(40px);
+    @include rhythm(0, 1, 1, 0, 40px);
+    @include adjust-leading-to(0.8);
+  }
+}
+
+.Post-heading {
+  @include rhythm(0, 0, 0, 1, 20px);
+  @include adjust-leading-to(0.94);
+
+  @include at-breakpoint($bp-smallscreen) {
+    @include span-columns(18 omega, 24);
+  }
+}
+.Post-content {
+
+  .caps {
+    font-size: 0.9em;
+  }
+
+  ul, ol {
+    li {
+      @include rhythm(0, 0, 0, 1, 16px);
+
+      &:last-child {
+        @include rhythm(0, 0, 0, 0, 16px);
+      }
+    }
+  }
+
+  @include at-breakpoint($bp-smallscreen) {
+    @include span-columns(18 omega, 24);
+  }
+
+  h2 {
+    @include adjust-font-size-to(16px);
+    text-transform: uppercase;
+    border-bottom: 1px solid #f0f0f0;
+    @include rhythm(0, 1, 0.2, 0.8, 26px);
+    letter-spacing: 0.04em;
+  }
+
+  img {
+    @extend %geekyimage;
+  }
+}
+
+
+
+
+.Post-link {
+  &:link,
+  &:visited {
+//    color: $color-link--heading;
+  }
+}

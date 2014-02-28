@@ -1,0 +1,5 @@
+.Footer {
+  @include adjust-font-size-to(16px);
+  @include adjust-leading-to(1);
+  @include rhythm(1,0,0,1, 16px);
+}

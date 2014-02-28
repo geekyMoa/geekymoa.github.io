@@ -1,0 +1,56 @@
+.Intro {
+  @include clearfix;
+  @include rhythm(1,0,0.5,0.5,16px);
+  border-bottom: 1px solid $color-border;
+  display: table;
+  width: 100%;
+  @include at-breakpoint($bp-pad) {
+    @include rhythm(1,0,1,1,16px);
+  }
+  @include at-breakpoint($bp-largescreen) {
+    @include rhythm(2,0,2,1,16px);
+  }
+}
+
+.Intro-image {
+//  @include border-radius(300px);
+  @include at-breakpoint($bp-pad) {
+    display: table-cell;
+    width: 23.40426%;
+    vertical-align: middle;
+  }
+
+  img {
+    @include border-radius(300px);
+    @extend %geekyimage;
+
+    @include at-breakpoint (0 $bp-pad) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.Intro-presentation {
+
+  @include rhythm(0.5, 0, 0, 0, 16px);
+
+  @include at-breakpoint($bp-pad) {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 2.12766%;
+    @include adjust-font-size-to(14px);
+    @include adjust-leading-to(1);
+    @include rhythm(0, 0, 0, 0, 16px);
+  }
+
+  @include at-breakpoint($bp-smallscreen) {
+    @include adjust-font-size-to(16px);
+    @include adjust-leading-to(1);
+  }
+
+  @include at-breakpoint($bp-largescreen) {
+    @include adjust-font-size-to(20px);
+    @include adjust-leading-to(1);
+  }
+}

@@ -1,0 +1,13 @@
+@include at-breakpoint($bp-smallscreen) {
+  .Contact {
+    @include span-columns(18 omega, 24);
+  }
+}
+
+.Contact-title {
+  @include adjust-font-size-to(16px);
+  @include adjust-leading-to(1);
+  @include rhythm(1,0,0,0, 16px);
+  color: #fff;
+  text-shadow: 0 0 1px #666;
+}

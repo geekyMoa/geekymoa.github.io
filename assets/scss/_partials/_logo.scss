@@ -1,0 +1,76 @@
+.Logo {
+  @include adjust-font-size-to(18px);
+  @include adjust-leading-to(1);
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-family: $text-monospace;
+  position: relative;
+
+  @include at-breakpoint($bp-smallscreen) {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -8px;
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      z-index: 100;
+      border-left: 1px solid #fff;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -8px;
+      top: 0;
+      bottom: 0;
+      width: 8px;
+      z-index: 100;
+      border-right: 1px solid #fff;
+    }
+
+    @include span-columns(6, 24);
+  }
+
+}
+
+.Logo-link {
+  color: $color-text;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  border-bottom: 1px dotted $color-text-meta;
+  @include rhythm(0, 0.5, 0.5, 0.5, 18px);
+
+  @include at-breakpoint($bp-smallscreen) {
+    background: #fff;
+    display: block;
+    border-bottom: none;
+    @include rhythm(0, 1, 1, 0, 18px);
+    padding-left: 1em;
+    padding-right: 1em;
+    @include adjust-leading-to(0.8);
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -8px;
+      right: -8px;
+      height: 8px;
+      background: #fff;
+      bottom: -8px;
+      z-index: 100;
+      border-right: 1px solid $color-border;
+      border-left: 1px solid $color-border;
+    }
+  }
+  &:after {
+    content: ';';
+  }
+}
+
+

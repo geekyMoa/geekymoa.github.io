@@ -1,0 +1,25 @@
+<section class="Extras">
+  <div class="Layout-container">
+
+  <!--<ul class="List List-extras">-->
+    <!--{% for post in site.posts %}-->
+    <!--<li class="List-item">-->
+      <!--&lt;!&ndash; <span class="Date Date--sidebar">{{ post.date | date_to_long_string }}</span> &ndash;&gt;-->
+      <!--<a href="{{ post.url }}">{{ post.title }}</a>-->
+    <!--</li>-->
+    <!--{% endfor %}-->
+  <!--</ul>-->
+
+  <ul class="Navigation">
+    <li><a href="/archives">Archives</a></li>
+    <li><a href="/rss/rss.xml">RSS</a></li>
+  </ul>
+
+  <ul class="Contact">
+    <li><a href="http://twitter.com/geekyMoa">@geekyMoa</a></li>
+    <li><a href="http://github.com">GitHub profile</a></li>
+  </ul>
+
+  </div>
+
+</section>

@@ -1,0 +1,54 @@
+{% include header.ext param="h1" %}
+
+<section class="Layout-container" role="main">
+
+  <div class="Intro">
+
+    <div class="Intro-image">
+      <img src="/assets/images/layout/moa.jpg" alt="Moa goes Miley Cyrus">
+    </div>
+
+    <div class="Intro-presentation">
+      <p>Standards-thumpin&#8217;, divitis-squashin&#8217;, sass-lovin&#8217;, js-gobblin&#8217;
+        front-end-oriented web developer who likes to dabble in all ends,
+        back, middle, and front. In an ongoing love/hate triangle with <a href="http://drupal.org">Drupal</a> and&nbsp;<a href="http://wordpress.org">WordPress</a>.</p>
+    </div>
+
+  </div>
+
+  <ul class="List">
+    {% for page in site.posts %}
+    <li class="List-item">
+      <article class="Post">
+        <header class="Post-header">
+          <h2 class="Post-heading"><a class="Post-link" href="{{ page.url }}">{{ page.title }}</a></h2>
+          {% include date.ext %}
+        </header>
+        <div class="Post-content Post-content--excerpt">
+          {{ page.excerpt }}
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <div class="Pager">
+    {% if paginator.previous_page_path == nil %}
+      <span class="Pager-item Pager-item--empty">&laquo; Back</span>
+    {% else %}
+      <a class="Pager-item Pager-item--previous" href="{{ paginator.previous_page_path }}"> &laquo; Back</a>
+    {% endif; %}
+    
+    <span class="Pager-item Pager-item--current">{{ paginator.page }} <span class="Pager-item-of">of</span> {{ paginator.total_pages }}</span>
+
+    {% if paginator.next_page_path == nil %}
+      <span class="Pager-item Pager-item--empty">Next &raquo;</span>
+    {% else %}
+      <a class="Pager-item Pager-item--next" href="{{ paginator.next_page_path }}"> Next &raquo;</a>
+    {% endif; %}
+
+  </div>
+</section>
+
+{% include sidebar.ext %}
+{% include footer.ext %}

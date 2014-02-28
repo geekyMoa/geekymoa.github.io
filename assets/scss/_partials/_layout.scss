@@ -1,0 +1,158 @@
+* {
+  @include box-sizing(border-box);
+  transition: background-color 0.2s ease-in;
+  transition: color 0.08s ease-in;
+}
+
+@include establish-baseline;
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../icomoon/fonts/icomoon.eot?-5r9j9v');
+  src:url('../icomoon/fonts/icomoon.eot?#iefix-5r9j9v') format('embedded-opentype'),
+  url('../icomoon/fonts/icomoon.woff?-5r9j9v') format('woff'),
+  url('../icomoon/fonts/icomoon.ttf?-5r9j9v') format('truetype'),
+  url('../icomoon/fonts/icomoon.svg?-5r9j9v#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: $text-default;
+  color: $color-text;
+  // @include debug-vertical-alignment;
+}
+
+p {
+  @include rhythm(0, 0, 0, 1, 16px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.Layout {
+  transition: font-size 0.4s ease-in;
+
+  @include at-breakpoint($bp-pad) {
+    @include adjust-font-size-to(18px);
+      @include adjust-leading-to(1);
+  }
+
+  @include at-breakpoint($bp-smallscreen) {
+    @include adjust-font-size-to(22px);
+    @include adjust-leading-to(1);
+  }
+
+  @include at-breakpoint($bp-normalscreen) {
+    @include adjust-font-size-to(24px);
+    @include adjust-leading-to(1);
+  }
+}
+
+a:not(.Logo-link) {
+  text-decoration: none;
+  color: $color-link;
+
+  &:link,
+  &:visited {
+  }
+
+  &:hover,
+  &:active {
+    color: #008982;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+code, pre {
+  font-family: $text-monospace;
+  @include adjust-font-size-to(14px);
+  @include adjust-leading-to(0.8);
+}
+
+code {
+  background: #fcfcfc;
+  color: lighten($color-text, 10%)
+}
+
+pre {
+  background: #fcfcfc;
+  @include rhythm(1, 1, 1, 1, 14px);
+  padding-left: 0;
+  padding-right: 0;
+
+  @include at-breakpoint($bp-smallscreen) {
+    padding-left: 2em;
+    padding-right: 1em;
+  }
+}
+
+blockquote {
+  border-left: 5px solid #f0f0f0;
+  padding-left: 1em;
+  position: relative;
+  @include rhythm(1, 0, 0, 1, 16px);
+
+  &:before {
+    content: '\201C';
+    position: absolute;
+    top: 0;
+    left: -0.6em;
+    color: #f0f0f0;
+    font-size: 6em;
+    line-height: 0.7;
+  }
+
+  @include at-breakpoint($bp-smallscreen) {
+    padding-left: 1.2em;
+    margin-left: 3em;
+  }
+}
+
+// small caps
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+.Layout-container {
+	@include container;
+	min-width: 250px;
+}
+
+.Layout-header {
+  background: $color-bg-alt;
+  text-align: center;
+  position: relative;
+
+  @include at-breakpoint($bp-smallscreen) {
+    text-align: left;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 8px;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      border-bottom: 1px solid $color-border;
+    }
+  }
+
+  @include at-breakpoint($bp-largescreen) {
+    @include rhythm(0, 0, 0, 1, 16px);
+  }
+}
+
+

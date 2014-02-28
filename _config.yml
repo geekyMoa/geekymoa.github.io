@@ -1,0 +1,14 @@
+name: "Moa Nandorf : geekyMoa"
+description: "Front-end developer at Wunderkraut SE"
+
+url: "http://geekymoa.se"
+rss_path: "rss"
+rss_post_limit: 10
+paginate: 5
+paginate_path: "page:num"
+
+markdown: rdiscount
+permalink: pretty
+pygments: true
+
+timezone: Europe/Stockholm

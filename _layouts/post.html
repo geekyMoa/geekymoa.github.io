@@ -1,0 +1,33 @@
+{% include header.ext %}
+
+<article class="Post Post--single Layout-container">
+  <h1 class="Post-title">
+    {{ page.title }}
+  </h1>
+
+  {% include date.ext class='Date--post Date--post--single' %}
+
+  <div class="Post-content">
+    {{ content }}
+  </div>
+</article>
+
+<div class="Pager">
+
+  {% if page.previous.url == nil %}
+  <span class="Pager-item Pager-item--empty">&laquo; Previous post</span>
+  {% else %}
+  <a class="Pager-item Pager-item--previous" href="{{ page.previous.url }}"> &laquo; Previous post</a>
+  {% endif; %}
+
+  {% if page.next.url == nil %}
+  <span class="Pager-item Pager-item--empty">Next post &raquo;</span>
+  {% else %}
+  <a class="Pager-item Pager-item--next" href="{{ page.next.url }}"> Next post &raquo;</a>
+  {% endif; %}
+
+</div>
+
+{% include sidebar.ext %}
+
+{% include footer.ext %}

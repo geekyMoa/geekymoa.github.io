@@ -1,0 +1,35 @@
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+  font-family: $text-headings;
+  margin: 0;
+
+  + p {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  @include adjust-font-size-to(26px);
+}
+
+h2 {
+  @include adjust-font-size-to(18px);
+  // @include rhythm(0, 0, 0, 0, 20px);
+
+  @include at-breakpoint($bp-pad) {
+    @include adjust-font-size-to(22px);
+  }
+
+  @include at-breakpoint($bp-smallscreen) {
+    @include adjust-font-size-to(24px);
+  }
+}
+
+h3 {
+  @include adjust-font-size-to(18px);
+}
+
+h4 {
+  @include adjust-font-size-to(14px);
+  color: lighten($color-text, 10%);
+}
