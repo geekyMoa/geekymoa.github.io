@@ -6,51 +6,51 @@
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
   <channel>
     <title>Moa Nandorf : geekyMoa</title>
-    <link>http://localhost:4000</link>
+    <link>http://geekymoa.se</link>
     <description>Front-end developer at Wunderkraut SE</description>
     <pubDate>Sat, 08 Dec 2012 01:00:00 +0100</pubDate>
     <item>
       <title>WordPress clone on Drupal</title>
-      <link>http://localhost:4000/2012/12/08/wordpress-clone-on-drupal/</link>
+      <link>http://geekymoa.se/2012/12/08/wordpress-clone-on-drupal/</link>
       <description>&lt;p&gt;This is a placeholder post. I&amp;#8217;ve gotta try this one: &lt;a href=&quot;https://drupal.org/project/openenterprise&quot;&gt;Open Enterprise&lt;/a&gt; with &lt;a href=&quot;https://drupal.org/project/enterprise_blog&quot;&gt;Enterprise Blog&lt;/a&gt;, which is supposedly something of a WordPress&amp;nbsp;clone.&lt;/p&gt;
 </description>
       <pubDate>Sat, 08 Dec 2012 01:00:00 +0100</pubDate>
-      <guid>http://localhost:4000/2012/12/08/wordpress-clone-on-drupal/</guid>
+      <guid>http://geekymoa.se/2012/12/08/wordpress-clone-on-drupal/</guid>
       <dc:date>2012-12-08T01:00:00+01:00</dc:date>
     </item>
     <item>
       <title>How To Become a Better Web Developer</title>
-      <link>http://localhost:4000/2012/09/01/how-to-become-a-better-web-developer/</link>
+      <link>http://geekymoa.se/2012/09/01/how-to-become-a-better-web-developer/</link>
       <description>&lt;p&gt;When it comes to web development, I want to learn it all. And by all, I mean &lt;em&gt;all the things&lt;/em&gt; &amp;#8211; from server maintenance to design. And I want to become the best I can at all these&amp;nbsp;things.&lt;/p&gt;
 </description>
       <pubDate>Sat, 01 Sep 2012 00:00:00 +0200</pubDate>
-      <guid>http://localhost:4000/2012/09/01/how-to-become-a-better-web-developer/</guid>
+      <guid>http://geekymoa.se/2012/09/01/how-to-become-a-better-web-developer/</guid>
       <dc:date>2012-09-01T00:00:00+02:00</dc:date>
     </item>
     <item>
       <title>How to Succeed in Open Source (or Things I Learned from Writing My First Rules Condition)</title>
-      <link>http://localhost:4000/2011/12/01/how-to-succeed-in-open-source/</link>
+      <link>http://geekymoa.se/2011/12/01/how-to-succeed-in-open-source/</link>
       <description>My colleague Mattias keeps giving me one piece of great advice that I just keep forgetting. When you want to accomplish something, look at a piece of code that already does sort of what you want to do, copy and paste it, and modify it to work like you want it to.</description>
       <pubDate>Thu, 01 Dec 2011 00:00:00 +0100</pubDate>
-      <guid>http://localhost:4000/2011/12/01/how-to-succeed-in-open-source/</guid>
+      <guid>http://geekymoa.se/2011/12/01/how-to-succeed-in-open-source/</guid>
       <dc:date>2011-12-01T00:00:00+01:00</dc:date>
     </item>
     <item>
       <title>Why are there so few female developers?</title>
-      <link>http://localhost:4000/2011/10/11/why-are-there-so-few-female-developers/</link>
+      <link>http://geekymoa.se/2011/10/11/why-are-there-so-few-female-developers/</link>
       <description>&lt;p&gt;Currently I&amp;#8217;m the only female developer at my office, and one of a total of four in the company (and two of the four are currently on leave). We had an interesting discussion over lunch about this that mostly dealt with experiences during childhood, even though it somehow degraded into space&amp;nbsp;cowboys&amp;#8230;&lt;/p&gt;
 </description>
       <pubDate>Tue, 11 Oct 2011 00:00:00 +0200</pubDate>
-      <guid>http://localhost:4000/2011/10/11/why-are-there-so-few-female-developers/</guid>
+      <guid>http://geekymoa.se/2011/10/11/why-are-there-so-few-female-developers/</guid>
       <dc:date>2011-10-11T00:00:00+02:00</dc:date>
     </item>
     <item>
       <title>Drupal vs WordPress</title>
-      <link>http://localhost:4000/2011/08/31/drupal-vs-wordpress/</link>
+      <link>http://geekymoa.se/2011/08/31/drupal-vs-wordpress/</link>
       <description>&lt;p&gt;I have received a few quips about working with Drupal and yet using WordPress for my blog. To that I say, use whatever fits best for the project you&amp;#8217;re working&amp;nbsp;on.&lt;/p&gt;
 </description>
       <pubDate>Wed, 31 Aug 2011 00:00:00 +0200</pubDate>
-      <guid>http://localhost:4000/2011/08/31/drupal-vs-wordpress/</guid>
+      <guid>http://geekymoa.se/2011/08/31/drupal-vs-wordpress/</guid>
       <dc:date>2011-08-31T00:00:00+02:00</dc:date>
     </item>
     <dc:date>2012-12-08T01:00:00+01:00</dc:date>
