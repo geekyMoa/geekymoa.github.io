@@ -8,15 +8,15 @@
     <title>Moa Nandorf : geekyMoa</title>
     <link>http://geekymoa.se</link>
     <description>Front-end developer at Wunderkraut SE</description>
-    <pubDate>Sat, 08 Dec 2012 01:00:00 +0100</pubDate>
+    <pubDate>Sat, 08 Dec 2012 00:00:00 -0000</pubDate>
     <item>
       <title>WordPress clone on Drupal</title>
       <link>http://geekymoa.se/2012/12/08/wordpress-clone-on-drupal/</link>
       <description>&lt;p&gt;This is a placeholder post. I&amp;#8217;ve gotta try this one: &lt;a href=&quot;https://drupal.org/project/openenterprise&quot;&gt;Open Enterprise&lt;/a&gt; with &lt;a href=&quot;https://drupal.org/project/enterprise_blog&quot;&gt;Enterprise Blog&lt;/a&gt;, which is supposedly something of a WordPress&amp;nbsp;clone.&lt;/p&gt;
 </description>
-      <pubDate>Sat, 08 Dec 2012 01:00:00 +0100</pubDate>
+      <pubDate>Sat, 08 Dec 2012 00:00:00 -0000</pubDate>
       <guid>http://geekymoa.se/2012/12/08/wordpress-clone-on-drupal/</guid>
-      <dc:date>2012-12-08T01:00:00+01:00</dc:date>
+      <dc:date>2012-12-08T00:00:00Z</dc:date>
     </item>
     <item>
       <title>How To Become a Better Web Developer</title>
@@ -53,6 +53,6 @@
       <guid>http://geekymoa.se/2011/08/31/drupal-vs-wordpress/</guid>
       <dc:date>2011-08-31T00:00:00+02:00</dc:date>
     </item>
-    <dc:date>2012-12-08T01:00:00+01:00</dc:date>
+    <dc:date>2012-12-08T00:00:00Z</dc:date>
   </channel>
 </rss>
